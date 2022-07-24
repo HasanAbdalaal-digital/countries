@@ -1,0 +1,25 @@
+{
+    "name": "hasan/countries",
+    "description": "",
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "illuminate/support": "^5.5|^6.0|^7.0|^8.0|^9.0",
+        "illuminate/database": "^5.5|^6.0|^7.0|^8.0|^9.0",
+        "php": ">=7.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Hasan\\Countries\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Hasan\\Countries\\CountriesServiceProvider"
+            ]
+        }
+    }
+}

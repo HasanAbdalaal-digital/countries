@@ -1,0 +1,21 @@
+{
+   "682":{
+      "capital":"Riyadh",
+      "citizenship":"Saudi Arabian",
+      "country_code":"682",
+      "currency":"riyal",
+      "currency_code":"SAR",
+      "currency_sub_unit":"halala",
+      "full_name":"Kingdom of Saudi Arabia",
+      "iso_3166_2":"SA",
+      "iso_3166_3":"SAU",
+      "name":"Saudi Arabia",
+      "region_code":"142",
+      "sub_region_code":"145",
+      "eea":false,
+      "calling_code":"966",
+      "currency_symbol":"\ufdfc",
+      "currency_decimals":"2",
+      "flag":"SA.png"
+   }
+}
