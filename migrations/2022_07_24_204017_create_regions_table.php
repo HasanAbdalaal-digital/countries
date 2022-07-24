@@ -4,14 +4,8 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class Regions extends Migration
+class CreateRegionsTable extends Migration
 {
-//"id": 13,
-//"capital_city_id": 2237,
-//"code": "GO",
-//"name_ar": "منطقة الجوف",
-//"name_en": "Jawf",
-//"population": 440009
     public function up()
     {
         Schema::create('regions', function (Blueprint $table) {
@@ -29,6 +23,6 @@ class Regions extends Migration
 
     public function down()
     {
-        Schema::drop('cities');
+        Schema::dropIfExists('regions');
     }
 }
