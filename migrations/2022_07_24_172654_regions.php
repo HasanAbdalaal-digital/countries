@@ -27,7 +27,7 @@ class Regions extends Migration
 
     public function down()
     {
-        Schema::table('regions', function (Blueprint $table) {
+        Schema::create('regions', function (Blueprint $table) {
             $table->id();
             $table->unsignedInteger('capital_city_id');
             $table->string('code');
