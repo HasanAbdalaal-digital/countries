@@ -20,13 +20,6 @@ class Cities extends Migration
 
     public function down()
     {
-        Schema::create('cities', function (Blueprint $table) {
-            $table->id();
-            $table->string('name_ar');
-            $table->string('name_en');
-            $table->unsignedInteger('region_id');
-            $table->foreignId('region_id')->references('id')->on('regions')->cascadeOnDelete();
-            $table->timestamps();
-        });
+        Schema::drop('cities');
     }
 }

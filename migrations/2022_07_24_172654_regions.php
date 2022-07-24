@@ -27,14 +27,6 @@ class Regions extends Migration
 
     public function down()
     {
-        Schema::create('regions', function (Blueprint $table) {
-            $table->id();
-            $table->unsignedInteger('capital_city_id');
-            $table->string('code');
-            $table->string('name_ar');
-            $table->string('name_en');
-            $table->integer('population');
-            $table->timestamps();
-        });
+        Schema::drop('cities');
     }
 }
