@@ -5,7 +5,7 @@ namespace Hasan\Countries;
 use Illuminate\Support\ServiceProvider;
 use Bhuvidya\Countries\MakeSeederCommand;
 
-class CountriesServiceProvider extends ServiceProvider
+class WordsServiceProvider extends ServiceProvider
 {
     /**
      * Indicates if loading of the provider is deferred.
