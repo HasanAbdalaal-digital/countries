@@ -44,11 +44,12 @@ class CountriesServiceProvider extends ServiceProvider
     public function register()
     {
         $sourceCountries = realpath(__DIR__ . '/../config/countries.php');
-        $sourceCities = realpath(__DIR__ . '/../config/cities.php');
         $sourceRegions = realpath(__DIR__ . '/../config/regions.php');
+
+        $sourceCities = realpath(__DIR__ . '/../config/cities.php');
         $this->mergeConfigFrom($sourceCountries, 'countries');
-        $this->mergeConfigFrom($sourceCities, 'cities');
         $this->mergeConfigFrom($sourceRegions, 'regions');
+        $this->mergeConfigFrom($sourceCities, 'cities');
 //
 //        $this->publishes([ $sourceCountries => config_path('countries.php') ], 'config');
 //        $this->publishes([ $sourceCities => config_path('cities.php') ], 'config');
