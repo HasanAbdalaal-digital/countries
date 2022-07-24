@@ -16,7 +16,7 @@ class Regions extends Migration
     {
         Schema::create('regions', function (Blueprint $table) {
             $table->id();
-            $table->unsignedInteger('capital_city_id');
+            $table->unsignedBigInteger('capital_city_id');
             $table->string('code');
             $table->string('name_ar');
             $table->string('name_en');
