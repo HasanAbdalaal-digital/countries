@@ -20,7 +20,7 @@ class Cities extends Migration
 
     public function down()
     {
-        Schema::table('cities', function (Blueprint $table) {
+        Schema::create('cities', function (Blueprint $table) {
             $table->id();
             $table->string('name_ar');
             $table->string('name_en');

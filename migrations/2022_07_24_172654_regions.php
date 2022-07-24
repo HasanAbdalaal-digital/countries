@@ -14,7 +14,7 @@ class Regions extends Migration
 //"population": 440009
     public function up()
     {
-        Schema::table('regions', function (Blueprint $table) {
+        Schema::create('regions', function (Blueprint $table) {
             $table->id();
             $table->unsignedInteger('capital_city_id');
             $table->string('code');
