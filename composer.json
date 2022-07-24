@@ -18,8 +18,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Hasan\\Countries\\CountriesServiceProvider",
-                "Hasan\\Countries\\",
+                "Hasan\\Countries\\CountriesServiceProvider"
             ]
         }
     }
