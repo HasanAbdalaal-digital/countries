@@ -20,7 +20,7 @@ class RegionsSeeder extends Seeder
 
         foreach ($regions as $regionId => $region) {
             DB::table(config('regions.table_name'))->insert(array(
-                'id' => $regionId,
+                'id' => $region->id,
                 'name_ar' => $region->name_ar,
                 'name_en' => $region->name_ar,
                 'capital_city_id' => $region->capital_city_id,
