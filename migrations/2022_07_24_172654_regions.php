@@ -21,6 +21,8 @@ class Regions extends Migration
             $table->string('name_ar');
             $table->string('name_en');
             $table->integer('population');
+            $table->unsignedBigInteger('country_id');
+            $table->foreign('country_id')->references('id')->on('countries')->cascadeOnDelete();
             $table->timestamps();
         });
     }
